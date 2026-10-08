@@ -1,10 +1,10 @@
 # 同期状況
 
-最終実行: 2026-10-08 09:49 UTC
+最終実行: 2026-10-08 12:56 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
-| JOB-SEARCH | pending | 新規作成待ち(作成上限のため次回以降) |
+| JOB-SEARCH | ok | 同期完了 |
 | OnlineTimeRecorder | blocked | 危険なファイル名: db.sqlite3  |
 | OnlineTimeRecorder2 | blocked | 危険なファイル名: db.sqlite3  |
 | RCsomo | pending | 新規作成待ち(作成上限のため次回以降) |
@@ -50,10 +50,10 @@
 | dentaku | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | dream-os | ok | 同期完了 |
 | e-gov | ok | 同期完了 |
-| ftp-auto-sync | pending | 新規作成待ち(作成上限のため次回以降) |
-| karu-tokyo | pending | 新規作成待ち(作成上限のため次回以降) |
-| maid-cafe-programming-school | pending | 新規作成待ち(作成上限のため次回以降) |
-| maid-cafe-se | pending | 新規作成待ち(作成上限のため次回以降) |
+| ftp-auto-sync | ok | 同期完了 |
+| karu-tokyo | ok | 同期完了 |
+| maid-cafe-programming-school | ok | 同期完了 |
+| maid-cafe-se | ok | 同期完了 |
 | maidcafe-programming-school | pending | 新規作成待ち(作成上限のため次回以降) |
 | maidcafe-programming-school | warn | 個人情報の可能性(目視確認): curriculum/web-dev-path.json(email) |
 | make-disk | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |

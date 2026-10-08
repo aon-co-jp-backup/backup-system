@@ -13,7 +13,7 @@ WORK="$(mktemp -d)"
 SCRIPTS="$(pwd)/scripts"
 CONF="$(pwd)/.gitleaks.toml"
 STATUS="$(pwd)/status.tsv"
-: > "$STATUS"
+: > "$STATUS"; : > "$STATUS.warn"
 
 # 公開かつアーカイブされていないリポジトリ。非公開は構造上ここに現れない。
 if [ -n "$ONLY" ]; then
@@ -56,6 +56,9 @@ for name in $repos; do
     bash "$SCRIPTS/quarantine.sh" "$name" "$d" "$WORK/$name.pii.json" || true
     record "$name" "blocked" "個人情報の疑い(詳細は退避先のレポート。元は要確認)"; cd - >/dev/null; continue
   fi
+  # 警告(ルール上は止めないが人の目で見る):ファイル名と種類のみ記録する
+  warns="$(jq -r '[.findings[]|select(.level=="warn")|"\(.path)(\(.types|keys|join("/")))"]|join(", ")' "$WORK/$name.pii.json" 2>/dev/null | cut -c1-200)"
+  [ -n "$warns" ] && echo "$name	warn	個人情報の可能性(目視確認): $warns" >> "$STATUS.warn"
 
   # 3) コミットのメールを匿名化(noreply以外は置換)。元の履歴は変えない。
   git filter-repo --force --quiet --email-callback '

@@ -15,7 +15,7 @@ STATUS="$(pwd)/status.tsv"
 if [ -n "$ONLY" ]; then
   repos="$ONLY"
 else
-  repos="$(gh api "orgs/$SRC_OWNER/repos?type=public&per_page=100" --paginate -q '.[]|select(.visibility=="public")|.name')"
+  repos="$(gh api "users/$SRC_OWNER/repos?per_page=100" --paginate -q '.[]|select(.visibility=="public")|.name')"
 fi
 
 # 危険なファイル名(履歴に1度でも存在したら停止)

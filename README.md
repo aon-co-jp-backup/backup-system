@@ -19,3 +19,9 @@ Secrets: `BACKUP_PAT`(必須)。
 - `scripts/quarantine.sh`: 止めたリポジトリの該当ファイルを非公開 `aruaru-db-archive/quarantine/<repo>/` へ複製(Secret `ARCHIVE_PAT` が必要)。
   元リポジトリ側の削除・履歴書き換えは自動では行わない(人が1件ずつ確認)。
 - 任意: Secret `ARUARU_LLM_URL`/`ARUARU_LLM_TOKEN` があれば、曖昧(warn)なものを aruaru-llm の `/v1/classify-pii` で二次判定する(このエンドポイントは aruaru-llm 側に未実装)。
+
+## ミラーに含めないもの(再取得できるものはバックアップしない)
+ミラー作成時のみ、次を履歴から取り除く(元リポジトリは変更しない): 20MBを超えるファイル、モデル(`*.gguf`/`*.safetensors`/`*.onnx`/`*.ckpt`/`*.pt`/`*.pth`、`models/*`)、`install/*/*.exe`。
+モデルは各アプリの自動ダウンロード機能(例: aruaru-llm の `/v1/recommend-and-download`)で復元する前提。
+このため、ミラーは「ソースコードの完全なバックアップ」であり、大きなバイナリの完全なバックアップではない。バイナリが必要な場合は元のリポジトリ/Releasesを参照すること。
+例外: `install/data/open-english.sqlite3`(空のDB、誤コミットの成果物と確認済み)は危険ファイル名の検査から除外。

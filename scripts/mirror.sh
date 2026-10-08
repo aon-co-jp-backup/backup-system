@@ -24,7 +24,7 @@ fi
 
 # 危険なファイル名(履歴に1度でも存在したら停止)
 DANGER='(^|/)(\.env|\.env\.[a-z]+|id_rsa[^/]*|id_ed25519[^/]*|[^/]*\.(pem|key|p12|pfx|sqlite3?|db|dump|sql\.gz|kdbx))$'
-SAFE_DANGER='(^|/)(testdata|fixtures?)/|\.env\.example$'
+SAFE_DANGER='(^|/)(testdata|fixtures?)/|\.env\.example$|^install/data/open-english\.sqlite3$'
 
 record() { printf '%s\t%s\t%s\n' "$1" "$2" "$3" >> "$STATUS"; echo "[$2] $1 $3"; }
 
@@ -61,7 +61,9 @@ for name in $repos; do
   [ -n "$warns" ] && echo "$name	warn	個人情報の可能性(目視確認): $warns" >> "$STATUS.warn"
 
   # 3) コミットのメールを匿名化(noreply以外は置換)。元の履歴は変えない。
-  git filter-repo --force --quiet --email-callback '
+  # 大きなバイナリ(20MB超)と、再ダウンロード可能なモデル/実行ファイルはミラーに含めない。
+  # (元リポジトリは変更しない。アプリ側の自動ダウンロード機能で復元できるもののみ対象)
+  git filter-repo --force --quiet --strip-blobs-bigger-than 20M --invert-paths     --path-glob '*.gguf' --path-glob '*.safetensors' --path-glob '*.onnx' --path-glob '*.ckpt'     --path-glob '*.pt' --path-glob '*.pth' --path-glob 'install/*/*.exe' --path-glob 'models/*'     --email-callback '
 import re
 e = email.decode("utf-8", "replace")
 return email if re.search(r"noreply", e) else b"anonymous@users.noreply.github.com"

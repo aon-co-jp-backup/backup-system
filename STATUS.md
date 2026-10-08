@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-08 12:56 UTC
+最終実行: 2026-10-08 15:50 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -54,16 +54,16 @@
 | karu-tokyo | ok | 同期完了 |
 | maid-cafe-programming-school | ok | 同期完了 |
 | maid-cafe-se | ok | 同期完了 |
-| maidcafe-programming-school | pending | 新規作成待ち(作成上限のため次回以降) |
+| maidcafe-programming-school | ok | 同期完了 |
 | maidcafe-programming-school | warn | 個人情報の可能性(目視確認): curriculum/web-dev-path.json(email) |
 | make-disk | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
-| master-user | pending | 新規作成待ち(作成上限のため次回以降) |
-| nameandemail | pending | 新規作成待ち(作成上限のため次回以降) |
+| master-user | ok | 同期完了 |
+| nameandemail | ok | 同期完了 |
 | old.aon.tokyo | blocked | gitleaks検出 1件(要確認・失効) |
 | open-LiveKit | pending | 新規作成待ち(作成上限のため次回以降) |
 | open-aruaru | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
-| open-audio-sr | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-av | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-audio-sr | ok | 同期完了 |
+| open-av | ok | 同期完了 |
 | open-bar | blocked | gitleaks検出 2件(要確認・失効) |
 | open-cosmo | pending | 新規作成待ち(作成上限のため次回以降) |
 | open-cpu | pending | 新規作成待ち(作成上限のため次回以降) |

@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-08 15:50 UTC
+最終実行: 2026-10-08 18:52 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -65,11 +65,11 @@
 | open-audio-sr | ok | 同期完了 |
 | open-av | ok | 同期完了 |
 | open-bar | blocked | gitleaks検出 2件(要確認・失効) |
-| open-cosmo | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-cpu | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-cuda | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-directx | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-easy-web | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-cosmo | ok | 同期完了 |
+| open-cpu | ok | 同期完了 |
+| open-cuda | ok | 同期完了 |
+| open-directx | ok | 同期完了 |
+| open-easy-web | ok | 同期完了 |
 | open-easy-web | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), server/src/db_encryption.rs(email), server/src/users.rs(jp_phone) |
 | open-english | pending | 新規作成待ち(作成上限のため次回以降) |
 | open-english | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), web/web-dev-path.json(email) |

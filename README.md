@@ -1,7 +1,7 @@
 # backup-system
 
 `aon-co-jp` の**公開**リポジトリを、検査・匿名化したうえで `aon-co-jp-backup` へ同名で自動ミラーする。
-GitHub Actions(毎日03:17 JST+手動)。結果は [STATUS.md](STATUS.md)。
+GitHub Actions(3時間おき+手動)。結果は [STATUS.md](STATUS.md)。
 
 - 非公開リポジトリは対象外(公開一覧のみ取得)。新しい公開リポジトリは自動で対象になる。
 - 全履歴を gitleaks で検査し、検出があればそのリポジトリは同期せず `blocked` と記録する。

@@ -1,7 +1,7 @@
 name: mirror
 on:
   schedule:
-    - cron: "17 18 * * *"   # 毎日 03:17 JST
+    - cron: "17 */3 * * *"   # 3時間おき(新規作成の上限に追いつくため)
   workflow_dispatch:
     inputs:
       only:

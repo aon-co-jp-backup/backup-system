@@ -1,0 +1,45 @@
+name: mirror
+on:
+  schedule:
+    - cron: "17 18 * * *"   # 毎日 03:17 JST
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "このリポジトリだけ同期(空なら全公開リポジトリ)"
+        required: false
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: mirror
+  cancel-in-progress: false
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: gitleaks(公式リリースバイナリ)を取得
+        run: |
+          V=8.28.0
+          curl -sSfL --retry 5 --retry-delay 5 -o gl.tgz \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${V}/gitleaks_${V}_linux_x64.tar.gz"
+          tar -xzf gl.tgz gitleaks && sudo mv gitleaks /usr/local/bin/
+          gitleaks version
+      - name: git-filter-repo を取得
+        run: pip install --quiet git-filter-repo
+      - name: 同期
+        env:
+          GH_TOKEN: ${{ secrets.SOURCE_READ_TOKEN || github.token }}
+          BACKUP_PAT: ${{ secrets.BACKUP_PAT }}
+          ONLY: ${{ github.event.inputs.only }}
+        run: bash scripts/mirror.sh
+      - name: STATUS.md 更新
+        if: always()
+        run: |
+          bash scripts/write_status.sh
+          git config user.name "backup-bot"; git config user.email "backup-bot@users.noreply.github.com"
+          git add STATUS.md
+          git diff --cached --quiet || (git commit -m "chore: 同期状況更新" && git push)
+      - name: blocked/error があれば失敗扱い(通知用)
+        run: "! grep -P '\t(blocked|error|orphan)\t' status.tsv"

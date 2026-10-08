@@ -32,8 +32,10 @@ for name in $repos; do
   cd "$d"
 
   # 1) 秘密情報(全履歴)
-  if ! gitleaks git --config "$CONF" --redact --no-banner --report-format json --report-path "$WORK/$name.leaks.json" "$d" >/dev/null 2>&1; then
+  if ! gitleaks git --config "$CONF" --redact --no-banner --report-format json --report-path "$WORK/$name.leaks.json" "$d" >/dev/null 2>"$WORK/$name.leaks.err"; then
     n="$(grep -c '"RuleID"' "$WORK/$name.leaks.json" 2>/dev/null || echo '?')"
+    [ -s "$WORK/$name.leaks.err" ] && head -c 400 "$WORK/$name.leaks.err" | tr "
+" " " | sed "s/^/  gitleaks stderr: /"; echo
     record "$name" "blocked" "gitleaks検出 ${n}件(要確認・失効)"
     jq -r '.[]|"  検出: \(.RuleID) \(.File):\(.StartLine) commit=\(.Commit[0:8])"' "$WORK/$name.leaks.json" 2>/dev/null | sort | uniq -c | head -20
     cd - >/dev/null; continue

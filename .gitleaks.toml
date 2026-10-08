@@ -5,7 +5,7 @@ useDefault = true
 
 # テスト用フィクスチャ(使い捨ての鍵など)は誤検知として除外する。
 # 実際の秘密がここに置かれていないことは、各リポジトリ側の責任とする。
-[allowlist]
+[[allowlists]]
 description = "test fixtures"
 paths = [
   '''(^|/)testdata/''',

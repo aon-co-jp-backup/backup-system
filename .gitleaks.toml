@@ -12,3 +12,9 @@ paths = [
   '''(^|/)tests?/fixtures?/''',
   '''\.env\.example$''',
 ]
+
+# WebSocketハンドシェイクのSec-WebSocket-Keyは公開仕様上の値(RFC 6455)で秘密ではない。
+[[allowlists]]
+description = "Sec-WebSocket-Key header"
+regexTarget = "line"
+regexes = ['''(?i)sec-websocket-key''']

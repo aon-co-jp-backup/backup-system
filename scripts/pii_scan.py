@@ -31,13 +31,27 @@ def luhn(num: str) -> bool:
         s += x
     return s % 10 == 0
 
+def mask_line(line: str) -> str:
+    """値を伏せ字にした文脈行(aruaru-llmへ送る用)。"""
+    line = EMAIL.sub("<EMAIL>", line)
+    line = re.sub(r"\d[\d -]{5,}\d", "<NUM>", line)
+    return line.strip()[:200]
+
+def context_lines(text: str, limit: int = 5):
+    out = []
+    for ln in text.splitlines():
+        if EMAIL.search(ln) or JP_PHONE.search(ln) or POSTAL_ADDR.search(ln):
+            out.append(mask_line(ln))
+            if len(out) >= limit: break
+    return out
+
 def git(d, *a, text=True):
     return subprocess.run(["git", "-C", d, *a], capture_output=True, text=text).stdout
 
 def main():
     d, out = sys.argv[1], sys.argv[2]
     files = git(d, "ls-tree", "-r", "--name-only", "HEAD").split("\n")
-    findings, block = [], False
+    findings, block, snippets = [], False, {}
     for path in filter(None, files):
         if SKIP_PATH.search(path): continue
         raw = subprocess.run(["git", "-C", d, "cat-file", "blob", f"HEAD:{path}"], capture_output=True).stdout
@@ -59,6 +73,7 @@ def main():
         bulk = (data_like and total >= 5) or total >= 30
         level = "block" if (strict or bulk) else "warn"
         findings.append({"path": path, "types": counts, "level": level})
+        snippets[path] = context_lines(text)
         block = block or level == "block"
     # 任意: aruaru-llmで曖昧(warn)を二次判定。設定が無ければ何もしない。
     url, tok = os.environ.get("ARUARU_LLM_URL"), os.environ.get("ARUARU_LLM_TOKEN")
@@ -67,8 +82,8 @@ def main():
             if f["level"] != "warn": continue
             try:
                 req = urllib.request.Request(url.rstrip("/") + "/v1/classify-pii",
-                    data=json.dumps({"path": f["path"], "types": f["types"]}).encode(),
-                    headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json"})
+                    data=json.dumps({"snippets": snippets.get(f["path"], [])}, ensure_ascii=False).encode("utf-8"),
+                    headers={"x-admin-token": tok, "Content-Type": "application/json"})
                 r = json.load(urllib.request.urlopen(req, timeout=20))
                 f["llm"] = r.get("verdict")
                 if r.get("verdict") == "pii": f["level"] = "block"; block = True

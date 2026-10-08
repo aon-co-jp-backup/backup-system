@@ -56,10 +56,20 @@ return email if re.search(r"noreply", e) else b"anonymous@users.noreply.github.c
 
   # 4) 宛先を用意(無ければ作成。Actionsは無効化して、ミラー先でワークフローが勝手に動かないようにする)
   if ! GH_TOKEN="$BACKUP_PAT" gh api "repos/$DST_OWNER/$name" >/dev/null 2>&1; then
-    GH_TOKEN="$BACKUP_PAT" gh repo create "$DST_OWNER/$name" --public \
-      --description "Auto mirror of $SRC_OWNER/$name (sanitized; do not edit)" >/dev/null 2>&1 \
-      || { record "$name" "error" "宛先作成失敗"; cd - >/dev/null; continue; }
+    # 作成の連続上限(二次レート制限)に当たりやすいので、間隔を空けてリトライする
+    created=0
+    for wait in 0 60 180 300; do
+      sleep "$wait"
+      if GH_TOKEN="$BACKUP_PAT" gh repo create "$DST_OWNER/$name" --public            --description "Auto mirror of $SRC_OWNER/$name (sanitized; do not edit)" >/dev/null 2>"$WORK/$name.create.err"; then
+        created=1; break
+      fi
+    done
+    if [ "$created" != 1 ]; then
+      record "$name" "error" "宛先作成失敗: $(tr '
+' ' ' < "$WORK/$name.create.err" | cut -c1-120)"; cd - >/dev/null; continue
+    fi
     GH_TOKEN="$BACKUP_PAT" gh api -X PUT "repos/$DST_OWNER/$name/actions/permissions" -F enabled=false >/dev/null 2>&1 || true
+    sleep 20   # 次の作成まで間隔を空ける
   fi
 
   # 5) ブランチとタグだけ push(refs/pull/* などは送らない)

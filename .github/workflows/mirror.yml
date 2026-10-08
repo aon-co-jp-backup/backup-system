@@ -32,6 +32,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.SOURCE_READ_TOKEN || github.token }}
           BACKUP_PAT: ${{ secrets.BACKUP_PAT }}
+          ARCHIVE_PAT: ${{ secrets.ARCHIVE_PAT }}
+          ARUARU_LLM_URL: ${{ secrets.ARUARU_LLM_URL }}
+          ARUARU_LLM_TOKEN: ${{ secrets.ARUARU_LLM_TOKEN }}
           ONLY: ${{ github.event.inputs.only }}
         run: bash scripts/mirror.sh
       - name: STATUS.md 更新

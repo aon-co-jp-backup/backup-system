@@ -25,3 +25,6 @@ Secrets: `BACKUP_PAT`(必須)。
 モデルは各アプリの自動ダウンロード機能(例: aruaru-llm の `/v1/recommend-and-download`)で復元する前提。
 このため、ミラーは「ソースコードの完全なバックアップ」であり、大きなバイナリの完全なバックアップではない。バイナリが必要な場合は元のリポジトリ/Releasesを参照すること。
 例外: `install/data/open-english.sqlite3`(空のDB、誤コミットの成果物と確認済み)は危険ファイル名の検査から除外。
+
+## リポジトリ個別の例外(ユーザー確認済み)
+- `OnlineTimeRecorder`/`OnlineTimeRecorder2` の `db.sqlite3`: 架空のデータであることをユーザーが確認(2026-10-08)。元リポジトリは変更せず、ミラーは通す。コピーは非公開 `aruaru-db-archive/quarantine/` にも保管。

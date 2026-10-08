@@ -34,7 +34,9 @@ for name in $repos; do
   # 1) 秘密情報(全履歴)
   if ! gitleaks git --config "$CONF" --redact --no-banner --report-format json --report-path "$WORK/$name.leaks.json" "$d" >/dev/null 2>&1; then
     n="$(grep -c '"RuleID"' "$WORK/$name.leaks.json" 2>/dev/null || echo '?')"
-    record "$name" "blocked" "gitleaks検出 ${n}件(要確認・失効)"; cd - >/dev/null; continue
+    record "$name" "blocked" "gitleaks検出 ${n}件(要確認・失効)"
+    jq -r '.[]|"  検出: \(.RuleID) \(.File):\(.StartLine) commit=\(.Commit[0:8])"' "$WORK/$name.leaks.json" 2>/dev/null | sort | uniq -c | head -20
+    cd - >/dev/null; continue
   fi
 
   # 2) 危険なファイル名

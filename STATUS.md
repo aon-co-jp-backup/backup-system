@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-08 18:52 UTC
+最終実行: 2026-10-08 21:46 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -71,14 +71,14 @@
 | open-directx | ok | 同期完了 |
 | open-easy-web | ok | 同期完了 |
 | open-easy-web | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), server/src/db_encryption.rs(email), server/src/users.rs(jp_phone) |
-| open-english | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-english | ok | 同期完了 |
 | open-english | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), web/web-dev-path.json(email) |
 | open-english-news-archive | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
-| open-english-news-archive-002 | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-english-pc | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-gitea | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-english-news-archive-002 | ok | 同期完了 |
+| open-english-pc | ok | 同期完了 |
+| open-gitea | ok | 同期完了 |
 | open-gitea | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), src/issues.rs(email), src/main.rs(email) |
-| open-kagaku | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-kagaku | ok | 同期完了 |
 | open-koumuten | pending | 新規作成待ち(作成上限のため次回以降) |
 | open-live-share | pending | 新規作成待ち(作成上限のため次回以降) |
 | open-mqa | pending | 新規作成待ち(作成上限のため次回以降) |

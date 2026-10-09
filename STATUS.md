@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-08 21:46 UTC
+最終実行: 2026-10-09 00:59 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -60,7 +60,7 @@
 | master-user | ok | 同期完了 |
 | nameandemail | ok | 同期完了 |
 | old.aon.tokyo | blocked | gitleaks検出 1件(要確認・失効) |
-| open-LiveKit | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-LiveKit | ok | 同期完了 |
 | open-aruaru | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-audio-sr | ok | 同期完了 |
 | open-av | ok | 同期完了 |
@@ -79,10 +79,10 @@
 | open-gitea | ok | 同期完了 |
 | open-gitea | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), src/issues.rs(email), src/main.rs(email) |
 | open-kagaku | ok | 同期完了 |
-| open-koumuten | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-live-share | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-mqa | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-mqa-dsd | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-koumuten | ok | 同期完了 |
+| open-live-share | ok | 同期完了 |
+| open-mqa | ok | 同期完了 |
+| open-mqa-dsd | ok | 同期完了 |
 | open-music-llm | pending | 新規作成待ち(作成上限のため次回以降) |
 | open-raid-z | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-redmine | pending | 新規作成待ち(作成上限のため次回以降) |

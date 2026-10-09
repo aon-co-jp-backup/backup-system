@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-09 15:48 UTC
+最終実行: 2026-10-09 18:50 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -18,11 +18,11 @@
 | RS-HTML | ok | 同期完了 |
 | RS-JSON | ok | 同期完了 |
 | RS-JavaScript | ok | 同期完了 |
-| RS-Node.js | pending | 新規作成待ち(作成上限のため次回以降) |
-| RS-Ops | pending | 新規作成待ち(作成上限のため次回以降) |
-| RS-React | pending | 新規作成待ち(作成上限のため次回以降) |
-| RS-Red | pending | 新規作成待ち(作成上限のため次回以降) |
-| RS-SmartTCP | pending | 新規作成待ち(作成上限のため次回以降) |
+| RS-Node.js | ok | 同期完了 |
+| RS-Ops | ok | 同期完了 |
+| RS-React | ok | 同期完了 |
+| RS-Red | ok | 同期完了 |
+| RS-SmartTCP | ok | 同期完了 |
 | RS-TypeScript | pending | 新規作成待ち(作成上限のため次回以降) |
 | RUNO | pending | 新規作成待ち(作成上限のため次回以降) |
 | Rust-JSON | pending | 新規作成待ち(作成上限のため次回以降) |

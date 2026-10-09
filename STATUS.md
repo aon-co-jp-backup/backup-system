@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-09 00:59 UTC
+最終実行: 2026-10-09 03:47 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -83,14 +83,14 @@
 | open-live-share | ok | 同期完了 |
 | open-mqa | ok | 同期完了 |
 | open-mqa-dsd | ok | 同期完了 |
-| open-music-llm | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-music-llm | ok | 同期完了 |
 | open-raid-z | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
-| open-redmine | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-redmine | ok | 同期完了 |
 | open-redmine | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), web/src/lib.rs(email) |
-| open-runo | pending | 新規作成待ち(作成上限のため次回以降) |
-| open-shop | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-runo | ok | 同期完了 |
+| open-shop | ok | 同期完了 |
 | open-shop | warn | 個人情報の可能性(目視確認): crates/shop-api/src/main.rs(jp_phone) |
-| open-tv-chat | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-tv-chat | ok | 同期完了 |
 | open-web-server | pending | 新規作成待ち(作成上限のため次回以降) |
 | open-web-server | warn | 個人情報の可能性(目視確認): crates/open-web-server-gateway/src/two_factor.rs(email) |
 | open-wordpress | pending | 新規作成待ち(作成上限のため次回以降) |

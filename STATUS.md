@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-09 18:50 UTC
+最終実行: 2026-10-09 21:45 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -23,8 +23,8 @@
 | RS-React | ok | 同期完了 |
 | RS-Red | ok | 同期完了 |
 | RS-SmartTCP | ok | 同期完了 |
-| RS-TypeScript | pending | 新規作成待ち(作成上限のため次回以降) |
-| RUNO | pending | 新規作成待ち(作成上限のため次回以降) |
+| RS-TypeScript | ok | 同期完了 |
+| RUNO | ok | 同期完了 |
 | Rust-JSON | pending | 新規作成待ち(作成上限のため次回以降) |
 | TypeScript | pending | 新規作成待ち(作成上限のため次回以降) |
 | ai-ime-runo | ok | 同期完了 |
@@ -104,9 +104,9 @@
 | rhtml5 | ok | 同期完了 |
 | rs-FFmpeg | ok | 同期完了 |
 | rs-link-fusion | ok | 同期完了 |
-| rs-to-readme | pending | 新規作成待ち(作成上限のため次回以降) |
-| rs-xorriso | pending | 新規作成待ち(作成上限のため次回以降) |
-| runo-tokyo | pending | 新規作成待ち(作成上限のため次回以降) |
+| rs-to-readme | ok | 同期完了 |
+| rs-xorriso | ok | 同期完了 |
+| runo-tokyo | ok | 同期完了 |
 | sftp-git | pending | 新規作成待ち(作成上限のため次回以降) |
 | sftp-git | warn | 個人情報の可能性(目視確認): CLAUDE.md(email) |
 | tract-onnx-patch | pending | 新規作成待ち(作成上限のため次回以降) |

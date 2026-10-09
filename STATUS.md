@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-09 06:55 UTC
+最終実行: 2026-10-09 09:49 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -8,7 +8,7 @@
 | OnlineTimeRecorder | blocked | 危険なファイル名: db.sqlite3  |
 | OnlineTimeRecorder2 | blocked | 危険なファイル名: db.sqlite3  |
 | RCsomo | ok | 同期完了 |
-| RFrontEnd | pending | 新規作成待ち(作成上限のため次回以降) |
+| RFrontEnd | ok | 同期完了 |
 | RPoem | ok | 同期完了 |
 | RS-Blog | pending | 新規作成待ち(作成上限のため次回以降) |
 | RS-CSS | pending | 新規作成待ち(作成上限のため次回以降) |
@@ -97,11 +97,11 @@
 | pinax | blocked | gitleaks検出 5件(要確認・失効) |
 | poem-runo | ok | 同期完了 |
 | poem-tauri-cosmo | ok | 同期完了 |
-| rcss3 | pending | 新規作成待ち(作成上限のため次回以降) |
-| readme-to-rs | pending | 新規作成待ち(作成上限のため次回以降) |
-| realdata.pro | pending | 新規作成待ち(作成上限のため次回以降) |
+| rcss3 | ok | 同期完了 |
+| readme-to-rs | ok | 同期完了 |
+| realdata.pro | ok | 同期完了 |
 | realdata.pro | warn | 個人情報の可能性(目視確認): crates/rrd-server/src/github.rs(email) |
-| rhtml5 | pending | 新規作成待ち(作成上限のため次回以降) |
+| rhtml5 | ok | 同期完了 |
 | rs-FFmpeg | pending | 新規作成待ち(作成上限のため次回以降) |
 | rs-link-fusion | pending | 新規作成待ち(作成上限のため次回以降) |
 | rs-to-readme | pending | 新規作成待ち(作成上限のため次回以降) |

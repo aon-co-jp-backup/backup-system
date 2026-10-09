@@ -1,13 +1,13 @@
 # 同期状況
 
-最終実行: 2026-10-09 03:47 UTC
+最終実行: 2026-10-09 06:55 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
 | JOB-SEARCH | ok | 同期完了 |
 | OnlineTimeRecorder | blocked | 危険なファイル名: db.sqlite3  |
 | OnlineTimeRecorder2 | blocked | 危険なファイル名: db.sqlite3  |
-| RCsomo | pending | 新規作成待ち(作成上限のため次回以降) |
+| RCsomo | ok | 同期完了 |
 | RFrontEnd | pending | 新規作成待ち(作成上限のため次回以降) |
 | RPoem | ok | 同期完了 |
 | RS-Blog | pending | 新規作成待ち(作成上限のため次回以降) |
@@ -91,12 +91,12 @@
 | open-shop | ok | 同期完了 |
 | open-shop | warn | 個人情報の可能性(目視確認): crates/shop-api/src/main.rs(jp_phone) |
 | open-tv-chat | ok | 同期完了 |
-| open-web-server | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-web-server | ok | 同期完了 |
 | open-web-server | warn | 個人情報の可能性(目視確認): crates/open-web-server-gateway/src/two_factor.rs(email) |
-| open-wordpress | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-wordpress | ok | 同期完了 |
 | pinax | blocked | gitleaks検出 5件(要確認・失効) |
-| poem-runo | pending | 新規作成待ち(作成上限のため次回以降) |
-| poem-tauri-cosmo | pending | 新規作成待ち(作成上限のため次回以降) |
+| poem-runo | ok | 同期完了 |
+| poem-tauri-cosmo | ok | 同期完了 |
 | rcss3 | pending | 新規作成待ち(作成上限のため次回以降) |
 | readme-to-rs | pending | 新規作成待ち(作成上限のため次回以降) |
 | realdata.pro | pending | 新規作成待ち(作成上限のため次回以降) |

@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-09 12:52 UTC
+最終実行: 2026-10-09 15:48 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -14,10 +14,10 @@
 | RS-CSS | ok | 同期完了 |
 | RS-EC | ok | 同期完了 |
 | RS-Gitbucket | ok | 同期完了 |
-| RS-GraphQL | pending | 新規作成待ち(作成上限のため次回以降) |
-| RS-HTML | pending | 新規作成待ち(作成上限のため次回以降) |
-| RS-JSON | pending | 新規作成待ち(作成上限のため次回以降) |
-| RS-JavaScript | pending | 新規作成待ち(作成上限のため次回以降) |
+| RS-GraphQL | ok | 同期完了 |
+| RS-HTML | ok | 同期完了 |
+| RS-JSON | ok | 同期完了 |
+| RS-JavaScript | ok | 同期完了 |
 | RS-Node.js | pending | 新規作成待ち(作成上限のため次回以降) |
 | RS-Ops | pending | 新規作成待ち(作成上限のため次回以降) |
 | RS-React | pending | 新規作成待ち(作成上限のため次回以降) |
@@ -103,7 +103,7 @@
 | realdata.pro | warn | 個人情報の可能性(目視確認): crates/rrd-server/src/github.rs(email) |
 | rhtml5 | ok | 同期完了 |
 | rs-FFmpeg | ok | 同期完了 |
-| rs-link-fusion | pending | 新規作成待ち(作成上限のため次回以降) |
+| rs-link-fusion | ok | 同期完了 |
 | rs-to-readme | pending | 新規作成待ち(作成上限のため次回以降) |
 | rs-xorriso | pending | 新規作成待ち(作成上限のため次回以降) |
 | runo-tokyo | pending | 新規作成待ち(作成上限のため次回以降) |

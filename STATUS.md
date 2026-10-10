@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-10 09:37 UTC
+最終実行: 2026-10-10 12:45 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -34,6 +34,7 @@
 | aon.tokyo | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | ara-mean-yaoya | ok | 同期完了 |
 | aruaru | ok | 同期完了 |
+| aruaru-IME | ok | 同期完了 |
 | aruaru-ai | ok | 同期完了 |
 | aruaru-db | ok | 同期完了 |
 | aruaru-db | warn | 個人情報の可能性(目視確認): aruaru.example.yaml(email) |

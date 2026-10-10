@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-10 00:58 UTC
+最終実行: 2026-10-10 03:47 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -25,7 +25,7 @@
 | RS-SmartTCP | ok | 同期完了 |
 | RS-TypeScript | ok | 同期完了 |
 | RUNO | ok | 同期完了 |
-| Rust-JSON | pending | 新規作成待ち(作成上限のため次回以降) |
+| Rust-JSON | ok | 同期完了 |
 | TypeScript | pending | 新規作成待ち(作成上限のため次回以降) |
 | ai-ime-runo | ok | 同期完了 |
 | aon | ok | 同期完了 |
@@ -101,11 +101,11 @@
 | pdf-r2l-script-android | warn | 個人情報の可能性(目視確認): contributors.txt(email) |
 | pdf-r2l-script-linux | ok | 同期完了 |
 | pdf-r2l-script-linux | warn | 個人情報の可能性(目視確認): contributors.txt(email) |
-| pdf-r2l-script-mac | pending | 新規作成待ち(作成上限のため次回以降) |
+| pdf-r2l-script-mac | ok | 同期完了 |
 | pdf-r2l-script-mac | warn | 個人情報の可能性(目視確認): contributors.txt(email) |
-| pdf-r2l-script-win | pending | 新規作成待ち(作成上限のため次回以降) |
+| pdf-r2l-script-win | ok | 同期完了 |
 | pdf-r2l-script-win | warn | 個人情報の可能性(目視確認): contributors.txt(email) |
-| pdf-r2l-win | pending | 新規作成待ち(作成上限のため次回以降) |
+| pdf-r2l-win | ok | 同期完了 |
 | pinax | blocked | gitleaks検出 5件(要確認・失効) |
 | poem-runo | ok | 同期完了 |
 | poem-tauri-cosmo | ok | 同期完了 |
@@ -119,7 +119,7 @@
 | rs-to-readme | ok | 同期完了 |
 | rs-xorriso | ok | 同期完了 |
 | runo-tokyo | ok | 同期完了 |
-| sftp-git | pending | 新規作成待ち(作成上限のため次回以降) |
+| sftp-git | ok | 同期完了 |
 | sftp-git | warn | 個人情報の可能性(目視確認): CLAUDE.md(email) |
 | tract-onnx-patch | pending | 新規作成待ち(作成上限のため次回以降) |
 | warikan | pending | 新規作成待ち(作成上限のため次回以降) |

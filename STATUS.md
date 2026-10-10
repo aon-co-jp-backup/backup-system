@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-09 21:45 UTC
+最終実行: 2026-10-10 00:58 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -94,6 +94,18 @@
 | open-web-server | ok | 同期完了 |
 | open-web-server | warn | 個人情報の可能性(目視確認): crates/open-web-server-gateway/src/two_factor.rs(email) |
 | open-wordpress | ok | 同期完了 |
+| pdf-r2l-android | ok | 同期完了 |
+| pdf-r2l-linux | ok | 同期完了 |
+| pdf-r2l-mac | ok | 同期完了 |
+| pdf-r2l-script-android | ok | 同期完了 |
+| pdf-r2l-script-android | warn | 個人情報の可能性(目視確認): contributors.txt(email) |
+| pdf-r2l-script-linux | ok | 同期完了 |
+| pdf-r2l-script-linux | warn | 個人情報の可能性(目視確認): contributors.txt(email) |
+| pdf-r2l-script-mac | pending | 新規作成待ち(作成上限のため次回以降) |
+| pdf-r2l-script-mac | warn | 個人情報の可能性(目視確認): contributors.txt(email) |
+| pdf-r2l-script-win | pending | 新規作成待ち(作成上限のため次回以降) |
+| pdf-r2l-script-win | warn | 個人情報の可能性(目視確認): contributors.txt(email) |
+| pdf-r2l-win | pending | 新規作成待ち(作成上限のため次回以降) |
 | pinax | blocked | gitleaks検出 5件(要確認・失効) |
 | poem-runo | ok | 同期完了 |
 | poem-tauri-cosmo | ok | 同期完了 |

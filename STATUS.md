@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-12 03:45 UTC
+最終実行: 2026-10-12 06:53 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -83,6 +83,7 @@
 | open-kagaku | ok | 同期完了 |
 | open-koumuten | ok | 同期完了 |
 | open-live-share | ok | 同期完了 |
+| open-media | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-mqa | ok | 同期完了 |
 | open-mqa-dsd | ok | 同期完了 |
 | open-music-llm | ok | 同期完了 |

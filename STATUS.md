@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-14 09:55 UTC
+最終実行: 2026-10-14 13:08 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -46,7 +46,7 @@
 | aruaru-web | ok | 同期完了 |
 | aruaru.pro | ok | 同期完了 |
 | aruaru.tokyo | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
-| audiocafe-tokyo-php | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| audiocafe-tokyo-php | blocked | 危険なファイル名: aruaru/ca-extra.pem  |
 | audiocafe-tokyo-rust | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | cnf-diamond-fiber-battery | ok | 同期完了 |
 | dentaku | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
@@ -67,6 +67,7 @@
 | open-aruaru | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-audio-sr | ok | 同期完了 |
 | open-av | ok | 同期完了 |
+| open-backup | ok | 同期完了 |
 | open-bar | blocked | gitleaks検出 2件(要確認・失効) |
 | open-cosmo | ok | 同期完了 |
 | open-cpu | ok | 同期完了 |
@@ -125,6 +126,7 @@
 | runo-tokyo | ok | 同期完了 |
 | sftp-git | ok | 同期完了 |
 | sftp-git | warn | 個人情報の可能性(目視確認): CLAUDE.md(email) |
+| sonic-rs | ok | 同期完了 |
 | tract-onnx-patch | ok | 同期完了 |
 | warikan | ok | 同期完了 |
 | webeditor-sftp | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |

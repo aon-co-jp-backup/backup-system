@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-14 03:56 UTC
+最終実行: 2026-10-14 07:08 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -51,6 +51,7 @@
 | cnf-diamond-fiber-battery | ok | 同期完了 |
 | dentaku | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | dream-os | ok | 同期完了 |
+| dream-os | warn | 個人情報の可能性(目視確認): crates/dream-os-fonts/fonts/IPA-LICENSE.txt(email) |
 | e-gov | ok | 同期完了 |
 | ftp-auto-sync | ok | 同期完了 |
 | karu-tokyo | ok | 同期完了 |

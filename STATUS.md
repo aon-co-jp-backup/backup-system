@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-15 19:05 UTC
+最終実行: 2026-10-15 21:55 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -120,13 +120,14 @@
 | realdata.pro | warn | 個人情報の可能性(目視確認): crates/rrd-server/src/github.rs(email) |
 | rhtml5 | ok | 同期完了 |
 | rs-FFmpeg | ok | 同期完了 |
+| rs-dpiAwareness | ok | 同期完了 |
 | rs-link-fusion | ok | 同期完了 |
 | rs-to-readme | ok | 同期完了 |
 | rs-xorriso | ok | 同期完了 |
 | runo-tokyo | ok | 同期完了 |
 | sftp-git | ok | 同期完了 |
 | sftp-git | warn | 個人情報の可能性(目視確認): CLAUDE.md(email) |
-| sonic-rs | ok | 同期完了 |
+| sonic-rs | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
 | tract-onnx-patch | ok | 同期完了 |
 | warikan | ok | 同期完了 |
 | webeditor-sftp | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |

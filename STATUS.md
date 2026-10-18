@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-18 03:53 UTC
+最終実行: 2026-10-18 07:05 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -80,6 +80,7 @@
 | open-english-news-archive | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-english-news-archive-002 | ok | 同期完了 |
 | open-english-pc | ok | 同期完了 |
+| open-fudousan | ok | 同期完了 |
 | open-gitea | ok | 同期完了 |
 | open-gitea | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), src/issues.rs(email), src/main.rs(email) |
 | open-kagaku | ok | 同期完了 |
@@ -126,6 +127,7 @@
 | rs-to-readme | ok | 同期完了 |
 | rs-xorriso | ok | 同期完了 |
 | runo-tokyo | ok | 同期完了 |
+| runo.tokyo | ok | 同期完了 |
 | sftp-git | ok | 同期完了 |
 | sftp-git | warn | 個人情報の可能性(目視確認): CLAUDE.md(email) |
 | sonic-rs | orphan | 元が公開でない/存在しない。ミラーを手動確認 |

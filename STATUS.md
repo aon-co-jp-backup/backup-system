@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-18 07:05 UTC
+最終実行: 2026-10-18 09:53 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -15,6 +15,7 @@
 | RS-EC | ok | 同期完了 |
 | RS-Gitbucket | ok | 同期完了 |
 | RS-GraphQL | ok | 同期完了 |
+| RS-Guard | ok | 同期完了 |
 | RS-HTML | ok | 同期完了 |
 | RS-JSON | ok | 同期完了 |
 | RS-JavaScript | ok | 同期完了 |
@@ -126,6 +127,7 @@
 | rs-link-fusion | ok | 同期完了 |
 | rs-to-readme | ok | 同期完了 |
 | rs-xorriso | ok | 同期完了 |
+| runo-scanner | ok | 同期完了 |
 | runo-tokyo | ok | 同期完了 |
 | runo.tokyo | ok | 同期完了 |
 | sftp-git | ok | 同期完了 |

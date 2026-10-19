@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-18 21:51 UTC
+最終実行: 2026-10-19 01:08 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -99,6 +99,8 @@
 | open-shop | ok | 同期完了 |
 | open-shop | warn | 個人情報の可能性(目視確認): crates/shop-api/src/main.rs(jp_phone) |
 | open-tv-chat | ok | 同期完了 |
+| open-upstream-watch | ok | 同期完了 |
+| open-upstream-watch | warn | 個人情報の可能性(目視確認): crates/watch-server/tests/auth.rs(email) |
 | open-vsc-claude | ok | 同期完了 |
 | open-web-server | ok | 同期完了 |
 | open-web-server | warn | 個人情報の可能性(目視確認): crates/open-web-server-gateway/src/two_factor.rs(email) |

@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-20 21:54 UTC
+最終実行: 2026-10-21 01:10 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -57,6 +57,8 @@
 | e-gov | ok | 同期完了 |
 | ftp-auto-sync | ok | 同期完了 |
 | karu-tokyo | ok | 同期完了 |
+| maid-cafe-english | ok | 同期完了 |
+| maid-cafe-english | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), web/web-dev-path.json(email) |
 | maid-cafe-programming-school | ok | 同期完了 |
 | maid-cafe-se | ok | 同期完了 |
 | maidcafe-programming-school | ok | 同期完了 |

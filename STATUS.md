@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-22 19:06 UTC
+最終実行: 2026-10-22 21:59 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -71,6 +71,7 @@
 | open-aruaru | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-audio-sr | ok | 同期完了 |
 | open-av | ok | 同期完了 |
+| open-av-amp | ok | 同期完了 |
 | open-backup | ok | 同期完了 |
 | open-bar | blocked | gitleaks検出 2件(要確認・失効) |
 | open-cosmo | ok | 同期完了 |
@@ -94,6 +95,7 @@
 | open-mqa | ok | 同期完了 |
 | open-mqa-dsd | ok | 同期完了 |
 | open-music-llm | ok | 同期完了 |
+| open-network-amp | ok | 同期完了 |
 | open-raid-z | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-redmine | ok | 同期完了 |
 | open-redmine | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), web/src/lib.rs(email) |

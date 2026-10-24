@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-24 03:58 UTC
+最終実行: 2026-10-24 07:09 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -84,6 +84,8 @@
 | open-english | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), web/web-dev-path.json(email) |
 | open-english-news-archive | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-english-news-archive-002 | ok | 同期完了 |
+| open-english-news-readme-archive-test | ok | 同期完了 |
+| open-english-news-snippets-archive | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-english-pc | ok | 同期完了 |
 | open-fudousan | ok | 同期完了 |
 | open-gitea | ok | 同期完了 |

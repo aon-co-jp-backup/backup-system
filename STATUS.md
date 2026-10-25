@@ -1,9 +1,10 @@
 # 同期状況
 
-最終実行: 2026-10-25 01:05 UTC
+最終実行: 2026-10-25 03:58 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
+| 360-speaker | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | JOB-SEARCH | ok | 同期完了 |
 | OnlineTimeRecorder | blocked | 危険なファイル名: db.sqlite3  |
 | OnlineTimeRecorder2 | blocked | 危険なファイル名: db.sqlite3  |

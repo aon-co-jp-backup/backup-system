@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-25 03:58 UTC
+最終実行: 2026-10-25 07:12 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -51,6 +51,7 @@
 | aruaru.tokyo | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | audiocafe-tokyo-php | blocked | 危険なファイル名: aruaru/ca-extra.pem  |
 | audiocafe-tokyo-rust | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| backup-to-discord-by-github | ok | 同期完了 |
 | cnf-diamond-fiber-battery | ok | 同期完了 |
 | dentaku | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | dream-os | ok | 同期完了 |

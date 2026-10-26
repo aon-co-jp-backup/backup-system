@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-26 04:03 UTC
+最終実行: 2026-10-26 07:19 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -96,6 +96,7 @@
 | open-koumuten | ok | 同期完了 |
 | open-live-share | ok | 同期完了 |
 | open-media | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| open-mirror | ok | 同期完了 |
 | open-mqa | ok | 同期完了 |
 | open-mqa-dsd | ok | 同期完了 |
 | open-music-llm | ok | 同期完了 |
@@ -146,6 +147,7 @@
 | sonic-rs | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
 | tract-onnx-patch | ok | 同期完了 |
 | version-control | ok | 同期完了 |
+| vps-backup | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | warikan | ok | 同期完了 |
 | webeditor-sftp | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | world-lab | ok | 同期完了 |

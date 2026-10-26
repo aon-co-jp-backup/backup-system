@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-26 16:22 UTC
+最終実行: 2026-10-26 19:14 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -154,7 +154,7 @@
 | tract-onnx-patch | ok | 同期完了 |
 | version-control | ok | 同期完了 |
 | version-control | warn | 個人情報の可能性(目視確認): PORTING.md(email) |
-| vps-backup | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| vps-backup | ok | 同期完了 |
 | warikan | ok | 同期完了 |
 | webeditor-sftp | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | world-lab | ok | 同期完了 |

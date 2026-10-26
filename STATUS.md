@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-26 07:19 UTC
+最終実行: 2026-10-26 10:16 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -26,6 +26,8 @@
 | RS-React | ok | 同期完了 |
 | RS-Red | ok | 同期完了 |
 | RS-SmartTCP | ok | 同期完了 |
+| RS-Sync | ok | 同期完了 |
+| RS-Sync | warn | 個人情報の可能性(目視確認): src/mail.rs(email), src/provider.rs(email), src/sync_engine.rs(email), static/index.html(email/jp_phone), tests/sync_integration.rs(email) |
 | RS-TypeScript | ok | 同期完了 |
 | RUNO | ok | 同期完了 |
 | Rust-JSON | ok | 同期完了 |
@@ -76,6 +78,7 @@
 | open-av-amp | ok | 同期完了 |
 | open-backup | ok | 同期完了 |
 | open-bar | blocked | gitleaks検出 2件(要確認・失効) |
+| open-cg-cad | ok | 同期完了 |
 | open-cosmo | ok | 同期完了 |
 | open-cpu | ok | 同期完了 |
 | open-cuda | ok | 同期完了 |
@@ -142,11 +145,15 @@
 | runo-scanner | ok | 同期完了 |
 | runo-tokyo | ok | 同期完了 |
 | runo.tokyo | ok | 同期完了 |
+| sample-harrier | ok | 同期完了 |
+| sample-maid | ok | 同期完了 |
+| sample-mario | ok | 同期完了 |
 | sftp-git | ok | 同期完了 |
 | sftp-git | warn | 個人情報の可能性(目視確認): CLAUDE.md(email) |
 | sonic-rs | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
 | tract-onnx-patch | ok | 同期完了 |
 | version-control | ok | 同期完了 |
+| version-control | warn | 個人情報の可能性(目視確認): PORTING.md(email) |
 | vps-backup | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | warikan | ok | 同期完了 |
 | webeditor-sftp | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |

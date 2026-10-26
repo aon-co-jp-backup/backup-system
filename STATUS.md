@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-26 01:19 UTC
+最終実行: 2026-10-26 04:03 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -145,6 +145,7 @@
 | sftp-git | warn | 個人情報の可能性(目視確認): CLAUDE.md(email) |
 | sonic-rs | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
 | tract-onnx-patch | ok | 同期完了 |
+| version-control | ok | 同期完了 |
 | warikan | ok | 同期完了 |
 | webeditor-sftp | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | world-lab | ok | 同期完了 |

@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-28 10:13 UTC
+最終実行: 2026-10-28 13:25 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -65,6 +65,7 @@
 | maid-cafe-english | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), web/web-dev-path.json(email) |
 | maid-cafe-programming-school | ok | 同期完了 |
 | maid-cafe-se | ok | 同期完了 |
+| maid-cafe-tokyo | ok | 同期完了 |
 | maidcafe-programming-school | ok | 同期完了 |
 | maidcafe-programming-school | warn | 個人情報の可能性(目視確認): curriculum/web-dev-path.json(email) |
 | make-disk | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |

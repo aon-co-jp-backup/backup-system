@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-10-28 04:08 UTC
+最終実行: 2026-10-28 07:29 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -139,6 +139,7 @@
 | rhtml5 | ok | 同期完了 |
 | rs-FFmpeg | ok | 同期完了 |
 | rs-dpiAwareness | ok | 同期完了 |
+| rs-kokoro-ja | ok | 同期完了 |
 | rs-link-fusion | ok | 同期完了 |
 | rs-to-readme | ok | 同期完了 |
 | rs-xorriso | ok | 同期完了 |

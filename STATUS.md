@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-02 04:22 UTC
+最終実行: 2026-11-02 07:53 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -68,11 +68,11 @@
 | maid-cafe-tokyo | ok | 同期完了 |
 | maidcafe-programming-school | ok | 同期完了 |
 | maidcafe-programming-school | warn | 個人情報の可能性(目視確認): curriculum/web-dev-path.json(email) |
-| make-disk | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| make-disk | ok | 同期完了 |
 | master-user | ok | 同期完了 |
 | nameandemail | ok | 同期完了 |
 | old.aon.tokyo | blocked | gitleaks検出 1件(要確認・失効) |
-| open-LiveKit | ok | 同期完了 |
+| open-LiveKit | blocked | gitleaks検出 8件(要確認・失効) |
 | open-aruaru | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | open-audio-sr | ok | 同期完了 |
 | open-av | ok | 同期完了 |

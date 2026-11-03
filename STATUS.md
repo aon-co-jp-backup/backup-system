@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-03 10:18 UTC
+最終実行: 2026-11-03 13:32 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -44,7 +44,7 @@
 | aruaru-db | ok | 同期完了 |
 | aruaru-db | warn | 個人情報の可能性(目視確認): aruaru.example.yaml(email) |
 | aruaru-github | ok | 同期完了 |
-| aruaru-jobs | ok | 同期完了 |
+| aruaru-jobs | pending | 作成上限に到達: GraphQL: Name already exists on this account (createRepository)  |
 | aruaru-llm | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | aruaru-search | ok | 同期完了 |
 | aruaru-vpn | ok | 同期完了 |

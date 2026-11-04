@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-04 10:34 UTC
+最終実行: 2026-11-04 13:33 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -29,7 +29,7 @@
 | RS-Sync | ok | 同期完了 |
 | RS-Sync | warn | 個人情報の可能性(目視確認): src/mail.rs(email), src/provider.rs(email), src/sync_engine.rs(email), static/index.html(email/jp_phone), tests/sync_integration.rs(email) |
 | RS-TypeScript | ok | 同期完了 |
-| RUNO | error | push失敗: remote: Internal Server Error         remote: Request ID 981B:225B4D:5B2102:6EAABB:6AEB0A12         remote: Time 2026-11 |
+| RUNO | ok | 同期完了 |
 | Rust-JSON | ok | 同期完了 |
 | TypeScript | ok | 同期完了 |
 | ai-ime-runo | ok | 同期完了 |
@@ -58,7 +58,7 @@
 | dentaku | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | dream-os | ok | 同期完了 |
 | dream-os | warn | 個人情報の可能性(目視確認): crates/dream-os-fonts/fonts/IPA-LICENSE.txt(email) |
-| e-gov | error | push失敗: remote: Internal Server Error         remote: Request ID 981C:211B29:5A168B:6D7C5E:6AEB0899         remote: Time 2026-11 |
+| e-gov | ok | 同期完了 |
 | ftp-auto-sync | ok | 同期完了 |
 | karu-tokyo | ok | 同期完了 |
 | maid-cafe-english | ok | 同期完了 |

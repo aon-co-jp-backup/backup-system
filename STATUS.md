@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-04 01:32 UTC
+最終実行: 2026-11-04 04:21 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -145,6 +145,7 @@
 | rs-link-fusion | ok | 同期完了 |
 | rs-to-readme | ok | 同期完了 |
 | rs-xorriso | ok | 同期完了 |
+| rsa-rs | blocked | gitleaks検出 4件(要確認・失効) |
 | runo-scanner | ok | 同期完了 |
 | runo-tokyo | ok | 同期完了 |
 | runo.tokyo | ok | 同期完了 |

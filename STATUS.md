@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-04 04:21 UTC
+最終実行: 2026-11-04 07:44 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -84,8 +84,7 @@
 | open-cpu | ok | 同期完了 |
 | open-cuda | ok | 同期完了 |
 | open-directx | ok | 同期完了 |
-| open-easy-web | ok | 同期完了 |
-| open-easy-web | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), server/src/db_encryption.rs(email), server/src/users.rs(jp_phone) |
+| open-easy-web | blocked | gitleaks検出 1件(要確認・失効) |
 | open-english | ok | 同期完了 |
 | open-english | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), scripts/archive-articles-to-github.sh(email), web/web-dev-path.json(email) |
 | open-english-news-archive | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |

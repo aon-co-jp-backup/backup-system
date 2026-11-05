@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-05 01:34 UTC
+最終実行: 2026-11-05 04:20 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -116,7 +116,7 @@
 | open-upstream-watch | warn | 個人情報の可能性(目視確認): PORTING.md(email), crates/watch-server/tests/auth.rs(email) |
 | open-vsc-claude | ok | 同期完了 |
 | open-web-server | ok | 同期完了 |
-| open-web-server | warn | 個人情報の可能性(目視確認): crates/open-web-server-gateway/src/two_factor.rs(email) |
+| open-web-server | warn | 個人情報の可能性(目視確認): crates/open-web-server-gateway/src/two_factor.rs(email), crates/open-web-server-gateway/tests/e2e_real_binary.rs(email) |
 | open-wordpress | ok | 同期完了 |
 | pdf-r2l-android | ok | 同期完了 |
 | pdf-r2l-linux | ok | 同期完了 |

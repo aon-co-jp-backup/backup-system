@@ -17,7 +17,13 @@ EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 JP_PHONE = re.compile(r"(?<![\d-])0\d{1,4}-\d{1,4}-\d{3,4}(?![\d-])")
 POSTAL_ADDR = re.compile(r"〒\s?\d{3}-?\d{4}\s*[^\n]{0,6}(都|道|府|県)")
 MYNUMBER = re.compile(r"(マイナンバー|個人番号)[^\n]{0,20}?(\d{4}[ -]?\d{4}[ -]?\d{4})")
-CARD = re.compile(r"(?<![\d-])(?:\d[ -]?){13,19}(?![\d-])")
+# カード番号: 区切り付きの書式、または連続数字(後者は同じ行に「カード」等の語がある場合のみ)。
+# 小数・ID・座標の一部を拾わないよう前後に数字/ピリオド/ハイフンを許さず、カード会社の番号の先頭も要求する。
+CARD_FMT = re.compile(r"(?<![\d.\-])(?:\d{4}[ -]\d{4}[ -]\d{4}[ -]\d{1,4}|\d{4}[ -]\d{6}[ -]\d{5})(?![\d.\-])")
+CARD_RAW = re.compile(r"(?<![\d.\-])\d{13,19}(?![\d.\-])")
+CARD_WORD = re.compile(r"(card|カード|visa|master|amex|クレジット|cvv|cvc|有効期限|決済)", re.I)
+CARD_PREFIX = re.compile(r"^(4\d{12}(\d{3}){0,2}|5[1-5]\d{14}|2[2-7]\d{14}|3[47]\d{13}|35\d{14}|6011\d{12}|62\d{14,17}|3(0[0-5]|[68])\d{11,12})$")
+SKIP_EXT = re.compile(r"\.(svg|rnnn|jpe?g|png|gif|webp|ico|map|wasm|woff2?|ttf|otf|pdf|min\.js|min\.css|lock)$|(^|/)\.c9/", re.I)
 
 def luhn(num: str) -> bool:
     d = [int(c) for c in num if c.isdigit()]
@@ -30,6 +36,17 @@ def luhn(num: str) -> bool:
             if x > 9: x -= 9
         s += x
     return s % 10 == 0
+
+def card_hits(text: str) -> int:
+    n = 0
+    for ln in text.splitlines():
+        for m in CARD_FMT.findall(ln):
+            d = re.sub(r"\D", "", m)
+            if CARD_PREFIX.match(d) and luhn(d): n += 1
+        if CARD_WORD.search(ln):
+            for m in CARD_RAW.findall(ln):
+                if CARD_PREFIX.match(m) and luhn(m): n += 1
+    return n
 
 def mask_line(line: str) -> str:
     """値を伏せ字にした文脈行(aruaru-llmへ送る用)。"""
@@ -48,12 +65,25 @@ def context_lines(text: str, limit: int = 5):
 def git(d, *a, text=True):
     return subprocess.run(["git", "-C", d, *a], capture_output=True, text=text).stdout
 
+def load_allow(repo: str):
+    """.pii-allow(リポジトリ<TAB>パス<TAB>理由)から、このリポジトリの例外パスを読む。"""
+    allow = set()
+    try:
+        for ln in open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".pii-allow"), encoding="utf-8"):
+            if ln.startswith("#") or not ln.strip(): continue
+            parts = ln.rstrip("\r\n").split("\t")
+            if len(parts) >= 2 and parts[0] == repo: allow.add(parts[1])
+    except OSError:
+        pass
+    return allow
+
 def main():
     d, out = sys.argv[1], sys.argv[2]
+    allow = load_allow(os.environ.get("PII_REPO", ""))
     files = git(d, "ls-tree", "-r", "--name-only", "HEAD").split("\n")
     findings, block, snippets = [], False, {}
     for path in filter(None, files):
-        if SKIP_PATH.search(path): continue
+        if SKIP_PATH.search(path) or SKIP_EXT.search(path) or path in allow: continue
         raw = subprocess.run(["git", "-C", d, "cat-file", "blob", f"HEAD:{path}"], capture_output=True).stdout
         if len(raw) > MAX_BYTES or b"\0" in raw[:4096]: continue
         try: text = raw.decode("utf-8")
@@ -64,7 +94,7 @@ def main():
         n = len(JP_PHONE.findall(text));  counts.update({"jp_phone": n} if n else {})
         n = len(POSTAL_ADDR.findall(text)); counts.update({"jp_address": n} if n else {})
         n = len(MYNUMBER.findall(text)); counts.update({"my_number": n} if n else {})
-        n = sum(1 for m in CARD.findall(text) if luhn(m)); counts.update({"card_number": n} if n else {})
+        n = card_hits(text); counts.update({"card_number": n} if n else {})
         if not counts: continue
         data_like = bool(DATA_LIKE.search(path))
         total = sum(counts.values())

@@ -55,7 +55,7 @@ for name in $repos; do
   fi
 
   # 2b) 個人情報(HEADのテキストを走査)。検出したら止め、該当ファイルを非公開アーカイブへ退避する。
-  if ! python3 "$SCRIPTS/pii_scan.py" "$d" "$WORK/$name.pii.json"; then
+  if ! PII_REPO="$name" python3 "$SCRIPTS/pii_scan.py" "$d" "$WORK/$name.pii.json"; then
     bash "$SCRIPTS/quarantine.sh" "$name" "$d" "$WORK/$name.pii.json" || true
     record "$name" "blocked" "個人情報の疑い(詳細は退避先のレポート。元は要確認)"; cd - >/dev/null; continue
   fi

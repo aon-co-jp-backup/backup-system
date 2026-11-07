@@ -32,3 +32,5 @@ Secrets: `BACKUP_PAT`(必須)。
 ## 個人情報ルールの調整(2026-11-08)
 - カード番号: カード会社の番号の先頭+チェックディジット+(区切り付き書式、または同じ行に「カード」等の語)を要求。SVG・画像・モデル・minify済みは対象外。(連続数字を拾う誤検知で22件中15件が停止していたため)
 - 例外は `.pii-allow`(リポジトリ/パス/理由)で管理する。ユーザー確認の上でのみ追加する。
+- 例外(ユーザー確認済み 2026-11-08): 第三者のテストデータ(rsa-rs の wycheproof、open-LiveKit の vendor/webrtc-dtls、pinax のサンプル)、単体テスト内ダミー値(open-bar presence.rs、open-easy-web confirm_ui.rs)、公開証明書のみの audiocafe-tokyo-php `aruaru/ca-extra.pem`。
+- 例外にしていない: old.aon.tokyo(古いテストプロジェクトのDBパスワード直書き。誤検知ではないので判断待ち)。

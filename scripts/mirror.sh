@@ -48,7 +48,7 @@ for name in $repos; do
   # 2) 危険なファイル名
   # リポジトリ個別の例外(ユーザー確認済み): OnlineTimeRecorder系のdb.sqlite3は架空データ
   SAFE_REPO=''
-  case "$name" in OnlineTimeRecorder|OnlineTimeRecorder2) SAFE_REPO='^db\.sqlite3$' ;; esac
+  case "$name" in OnlineTimeRecorder|OnlineTimeRecorder2) SAFE_REPO='^db\.sqlite3$' ;; audiocafe-tokyo-php) SAFE_REPO='^aruaru/ca-extra\.pem$' ;; esac
   bad="$(git log --all --name-only --format= | sort -u | grep -E -i "$DANGER" | grep -v -E -i "$SAFE_DANGER" | { [ -n "$SAFE_REPO" ] && grep -v -E "$SAFE_REPO" || cat; } | head -5 | tr '\n' ' ')"
   if [ -n "$bad" ]; then
     record "$name" "blocked" "危険なファイル名: $bad"; cd - >/dev/null; continue

@@ -18,3 +18,16 @@ paths = [
 description = "Sec-WebSocket-Key header"
 regexTarget = "line"
 regexes = ['''(?i)sec-websocket-key''']
+
+# 第三者のテストデータ・サンプル、および単体テスト内のダミー値(ファイル単位、ユーザー確認済み 2026-11-08)
+[[allowlists]]
+description = "third-party test vectors / samples and unit-test fixtures"
+paths = [
+  '''(^|/)tests/wycheproof/''',
+  '''(^|/)vendor/webrtc-dtls/''',
+  '''(^|/)site-packages/gdata\.py''',
+  '''(^|/)zwitschern/pownce_utils\.py$''',
+  '''(^|/)README\.transifex$''',
+  '''(^|/)app/src-tauri/src/presence\.rs$''',
+  '''(^|/)src/confirm_ui\.rs$''',
+]

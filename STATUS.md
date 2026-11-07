@@ -1,10 +1,10 @@
 # 同期状況
 
-最終実行: 2026-11-07 15:52 UTC
+最終実行: 2026-11-07 21:57 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
-| 360-speaker | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| 360-speaker | ok | 同期完了 |
 | JOB-SEARCH | ok | 同期完了 |
 | OnlineTimeRecorder | ok | 同期完了 |
 | OnlineTimeRecorder | warn | 個人情報の可能性(目視確認): app_test/migrations/0001_initial.py(jp_phone), app_test/models.py(jp_phone), polls/migrations/0001_initial.py(jp_phone), polls_before/forms.py(jp_phone) |
@@ -36,8 +36,9 @@
 | ai-ime-runo | ok | 同期完了 |
 | aon | ok | 同期完了 |
 | aon-co-jp | ok | 同期完了 |
-| aon-tokyo | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
-| aon.tokyo | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| aon-tokyo | ok | 同期完了 |
+| aon.tokyo | ok | 同期完了 |
+| aon.tokyo | warn | 個人情報の可能性(目視確認): contact.html(jp_phone) |
 | ara-mean-yaoya | ok | 同期完了 |
 | aruaru | ok | 同期完了 |
 | aruaru-IME | ok | 同期完了 |
@@ -46,17 +47,20 @@
 | aruaru-db | warn | 個人情報の可能性(目視確認): aruaru.example.yaml(email) |
 | aruaru-github | ok | 同期完了 |
 | aruaru-jobs | ok | 同期完了 |
-| aruaru-llm | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| aruaru-llm | ok | 同期完了 |
+| aruaru-llm | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), src/pii.rs(email), src/web_search.rs(jp_phone) |
 | aruaru-search | ok | 同期完了 |
 | aruaru-vpn | ok | 同期完了 |
 | aruaru-web | ok | 同期完了 |
 | aruaru.pro | ok | 同期完了 |
-| aruaru.tokyo | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| aruaru.tokyo | ok | 同期完了 |
+| aruaru.tokyo | warn | 個人情報の可能性(目視確認): src/main.rs(email/jp_phone) |
 | audiocafe-tokyo-php | blocked | 危険なファイル名: aruaru/ca-extra.pem  |
-| audiocafe-tokyo-rust | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| audiocafe-tokyo-rust | ok | 同期完了 |
+| audiocafe-tokyo-rust | warn | 個人情報の可能性(目視確認): src/main.rs(email/jp_phone) |
 | backup-to-discord-by-github | ok | 同期完了 |
 | cnf-diamond-fiber-battery | ok | 同期完了 |
-| dentaku | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| dentaku | ok | 同期完了 |
 | dream-os | ok | 同期完了 |
 | dream-os | warn | 個人情報の可能性(目視確認): crates/dream-os-fonts/fonts/IPA-LICENSE.txt(email) |
 | e-gov | ok | 同期完了 |
@@ -74,7 +78,8 @@
 | nameandemail | ok | 同期完了 |
 | old.aon.tokyo | blocked | gitleaks検出 1件(要確認・失効) |
 | open-LiveKit | blocked | gitleaks検出 8件(要確認・失効) |
-| open-aruaru | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| open-aruaru | ok | 同期完了 |
+| open-aruaru | warn | 個人情報の可能性(目視確認): aruaru-easyweb/.env.example(email), aruaru-easyweb/config/default.toml(email), aruaru-easyweb/src/templates/login.html(email), aruaru-easyweb/src/templates/setup.html(email), github-easy-push/package- |
 | open-audio-sr | ok | 同期完了 |
 | open-av | ok | 同期完了 |
 | open-av-amp | ok | 同期完了 |
@@ -88,10 +93,10 @@
 | open-easy-web | blocked | gitleaks検出 1件(要確認・失効) |
 | open-english | ok | 同期完了 |
 | open-english | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), scripts/archive-articles-to-github.sh(email), web/web-dev-path.json(email) |
-| open-english-news-archive | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| open-english-news-archive | pending | 新規作成待ち(作成上限のため次回以降) |
 | open-english-news-archive-002 | ok | 同期完了 |
 | open-english-news-readme-archive-test | ok | 同期完了 |
-| open-english-news-snippets-archive | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| open-english-news-snippets-archive | pending | 新規作成待ち(作成上限のため次回以降) |
 | open-english-pc | ok | 同期完了 |
 | open-english-pc | warn | 個人情報の可能性(目視確認): mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), web/web-dev-path.json(email) |
 | open-fudousan | ok | 同期完了 |
@@ -100,13 +105,15 @@
 | open-kagaku | ok | 同期完了 |
 | open-koumuten | ok | 同期完了 |
 | open-live-share | ok | 同期完了 |
-| open-media | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| open-media | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-media | warn | 個人情報の可能性(目視確認): src-tauri/plugins/tauri-plugin-android-folder/android/.tauri/tauri-api/src/main/java/app/tauri/AppPlugin.kt(email) |
 | open-mirror | ok | 同期完了 |
 | open-mqa | ok | 同期完了 |
 | open-mqa-dsd | ok | 同期完了 |
 | open-music-llm | ok | 同期完了 |
 | open-network-amp | ok | 同期完了 |
-| open-raid-z | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| open-raid-z | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-raid-z | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), open_runo_zfs_source/third_party/fuser-0.17.0-android-patch/Cargo.toml(email), open_runo_zfs_source/third_party/fuser-0.17.0-android-patch/examples/notify_inval_entry.rs(email), open |
 | open-redmine | ok | 同期完了 |
 | open-redmine | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), web/src/lib.rs(email) |
 | open-runo | ok | 同期完了 |
@@ -160,5 +167,5 @@
 | version-control | warn | 個人情報の可能性(目視確認): PORTING.md(email) |
 | vps-backup | ok | 同期完了 |
 | warikan | ok | 同期完了 |
-| webeditor-sftp | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
+| webeditor-sftp | pending | 新規作成待ち(作成上限のため次回以降) |
 | world-lab | ok | 同期完了 |

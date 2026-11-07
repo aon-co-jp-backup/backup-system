@@ -1,13 +1,14 @@
 # 同期状況
 
-最終実行: 2026-11-07 07:30 UTC
+最終実行: 2026-11-07 15:52 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
 | 360-speaker | blocked | 個人情報の疑い(詳細は退避先のレポート。元は要確認) |
 | JOB-SEARCH | ok | 同期完了 |
-| OnlineTimeRecorder | blocked | 危険なファイル名: db.sqlite3  |
-| OnlineTimeRecorder2 | blocked | 危険なファイル名: db.sqlite3  |
+| OnlineTimeRecorder | ok | 同期完了 |
+| OnlineTimeRecorder | warn | 個人情報の可能性(目視確認): app_test/migrations/0001_initial.py(jp_phone), app_test/models.py(jp_phone), polls/migrations/0001_initial.py(jp_phone), polls_before/forms.py(jp_phone) |
+| OnlineTimeRecorder2 | ok | 同期完了 |
 | RCsomo | ok | 同期完了 |
 | RFrontEnd | ok | 同期完了 |
 | RPoem | ok | 同期完了 |

@@ -104,6 +104,9 @@ done
 if [ -z "$ONLY" ]; then
   GH_TOKEN="$BACKUP_PAT" gh api "users/$DST_OWNER/repos?per_page=100" --paginate -q '.[].name' | while read -r m; do
     [ "$m" = "backup-system" ] && continue
-    echo "$repos" | grep -qx "$m" || record "$m" "orphan" "元が公開でない/存在しない。ミラーを手動確認"
+    echo "$repos" | grep -qx "$m" && continue
+    # 確認済みの孤立(ユーザーが残すと決めたもの)は警告扱いにして、実行を失敗にしない
+    if grep -qx "$m" .orphan-ok 2>/dev/null; then record "$m" "kept" "元は存在しないが、ユーザー判断でミラーを残す"
+    else record "$m" "orphan" "元が公開でない/存在しない。ミラーを手動確認"; fi
   done
 fi

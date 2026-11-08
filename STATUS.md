@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-07 22:19 UTC
+最終実行: 2026-11-08 06:29 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -31,6 +31,7 @@
 | RS-Sync | warn | 個人情報の可能性(目視確認): src/mail.rs(email), src/provider.rs(email), src/sync_engine.rs(email), static/index.html(email/jp_phone), tests/sync_integration.rs(email) |
 | RS-TypeScript | ok | 同期完了 |
 | RUNO | ok | 同期完了 |
+| RUNO | warn | 個人情報の可能性(目視確認): API-REST-REMAINING-20261106.md(email) |
 | Rust-JSON | ok | 同期完了 |
 | TypeScript | ok | 同期完了 |
 | ai-ime-runo | ok | 同期完了 |
@@ -55,7 +56,7 @@
 | aruaru.pro | ok | 同期完了 |
 | aruaru.tokyo | ok | 同期完了 |
 | aruaru.tokyo | warn | 個人情報の可能性(目視確認): src/main.rs(email/jp_phone) |
-| audiocafe-tokyo-php | pending | 作成上限に到達: GraphQL: You have created too many repositories, too quickly. Please try again l |
+| audiocafe-tokyo-php | ok | 同期完了 |
 | audiocafe-tokyo-php | warn | 個人情報の可能性(目視確認): index.php(email/jp_phone), top/contact.php(email/jp_phone), top/index.html(jp_phone), top/seminer.html(email/jp_phone) |
 | audiocafe-tokyo-rust | ok | 同期完了 |
 | audiocafe-tokyo-rust | warn | 個人情報の可能性(目視確認): src/main.rs(email/jp_phone) |
@@ -78,14 +79,14 @@
 | master-user | ok | 同期完了 |
 | nameandemail | ok | 同期完了 |
 | old.aon.tokyo | blocked | gitleaks検出 1件(要確認・失効) |
-| open-LiveKit | blocked | 危険なファイル名: vendor/webrtc-dtls/examples/certificates/client.pem vendor/webrtc-dtls/examples/certificates/client.pem.private_key.pem vendor/webrtc-dtls/examples/certificates/client.pub.pem vendor/webrtc-dtls/examples/certificates/server.pem vendor/webrtc-dtls/examples/certificates/server.pem.private_key.pem  |
+| open-LiveKit | ok | 同期完了 |
 | open-aruaru | ok | 同期完了 |
 | open-aruaru | warn | 個人情報の可能性(目視確認): aruaru-easyweb/.env.example(email), aruaru-easyweb/config/default.toml(email), aruaru-easyweb/src/templates/login.html(email), aruaru-easyweb/src/templates/setup.html(email), github-easy-push/package- |
 | open-audio-sr | ok | 同期完了 |
 | open-av | ok | 同期完了 |
 | open-av-amp | ok | 同期完了 |
 | open-backup | ok | 同期完了 |
-| open-bar | pending | 新規作成待ち(作成上限のため次回以降) |
+| open-bar | ok | 同期完了 |
 | open-cg-cad | ok | 同期完了 |
 | open-cosmo | ok | 同期完了 |
 | open-cpu | ok | 同期完了 |
@@ -140,7 +141,7 @@
 | pdf-r2l-script-mac | warn | 個人情報の可能性(目視確認): contributors.txt(email) |
 | pdf-r2l-script-win | ok | 同期完了 |
 | pdf-r2l-win | ok | 同期完了 |
-| pinax | blocked | 危険なファイル名: external_libs/python-openid-2.1.1/openid/test/data/openid-1.2-consumer-sqlitestore.db libs/external_libs/python-openid-2.1.1/openid/test/data/openid-1.2-consumer-sqlitestore.db libs/python-openid-2.1.1/openid/test/data/openid-1.2-consumer-sqlitestore.db pinax/projects/account_project/dev.db pinax/site-packages/python-openid-2.1.1/openid/test/data/openid-1.2-consumer-sqlitestore.db  |
+| pinax | ok | 同期完了 |
 | poem-runo | ok | 同期完了 |
 | poem-tauri-cosmo | ok | 同期完了 |
 | rcss3 | ok | 同期完了 |
@@ -154,7 +155,7 @@
 | rs-link-fusion | ok | 同期完了 |
 | rs-to-readme | ok | 同期完了 |
 | rs-xorriso | ok | 同期完了 |
-| rsa-rs | pending | 新規作成待ち(作成上限のため次回以降) |
+| rsa-rs | ok | 同期完了 |
 | runo-scanner | ok | 同期完了 |
 | runo-tokyo | ok | 同期完了 |
 | runo.tokyo | ok | 同期完了 |
@@ -163,10 +164,10 @@
 | sample-mario | ok | 同期完了 |
 | sftp-git | ok | 同期完了 |
 | sftp-git | warn | 個人情報の可能性(目視確認): CLAUDE.md(email) |
-| sonic-rs | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
+| sonic-rs | kept | 元は存在しないが、ユーザー判断でミラーを残す |
 | tract-onnx-patch | ok | 同期完了 |
 | version-control | ok | 同期完了 |
-| version-control | warn | 個人情報の可能性(目視確認): PORTING.md(email) |
+| version-control | warn | 個人情報の可能性(目視確認): PORTING.md(email), src/apiex.rs(email) |
 | vps-backup | ok | 同期完了 |
 | warikan | ok | 同期完了 |
 | webeditor-sftp | ok | 同期完了 |

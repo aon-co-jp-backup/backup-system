@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-09 01:05 UTC
+最終実行: 2026-11-09 11:53 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -11,7 +11,7 @@
 | OnlineTimeRecorder2 | ok | 同期完了 |
 | RCsomo | ok | 同期完了 |
 | RFrontEnd | ok | 同期完了 |
-| RPoem | ok | 同期完了 |
+| RPoem | blocked | gitleaks検出 1件(要確認・失効) |
 | RS-Blog | ok | 同期完了 |
 | RS-BootStrap | ok | 同期完了 |
 | RS-CSS | ok | 同期完了 |

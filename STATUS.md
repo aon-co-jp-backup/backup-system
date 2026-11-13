@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-13 02:02 UTC
+最終実行: 2026-11-13 11:18 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -100,6 +100,7 @@
 | open-english-news-archive-002 | ok | 同期完了 |
 | open-english-news-readme-archive-test | ok | 同期完了 |
 | open-english-news-snippets-archive | ok | 同期完了 |
+| open-english-news-snippets-archive | warn | 個人情報の可能性(目視確認): articles/2026-11-13.jsonl(email) |
 | open-english-pc | ok | 同期完了 |
 | open-english-pc | warn | 個人情報の可能性(目視確認): mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), web/web-dev-path.json(email) |
 | open-fudousan | ok | 同期完了 |

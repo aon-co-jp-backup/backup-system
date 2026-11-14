@@ -1,11 +1,13 @@
 # 同期状況
 
-最終実行: 2026-11-14 10:46 UTC
+最終実行: 2026-11-14 18:24 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
 | 360-speaker | ok | 同期完了 |
+| FastAPIM | ok | 同期完了 |
 | JOB-SEARCH | ok | 同期完了 |
+| MojoU | ok | 同期完了 |
 | OnlineTimeRecorder | ok | 同期完了 |
 | OnlineTimeRecorder | warn | 個人情報の可能性(目視確認): app_test/migrations/0001_initial.py(jp_phone), app_test/models.py(jp_phone), polls/migrations/0001_initial.py(jp_phone), polls_before/forms.py(jp_phone) |
 | OnlineTimeRecorder2 | ok | 同期完了 |
@@ -77,7 +79,7 @@
 | maidcafe-programming-school | warn | 個人情報の可能性(目視確認): curriculum/web-dev-path.json(email) |
 | make-disk | ok | 同期完了 |
 | master-user | ok | 同期完了 |
-| mfastapi | ok | 同期完了 |
+| mfastapi | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
 | nameandemail | ok | 同期完了 |
 | old.aon.tokyo | blocked | gitleaks検出 1件(要確認・失効) |
 | open-LiveKit | ok | 同期完了 |

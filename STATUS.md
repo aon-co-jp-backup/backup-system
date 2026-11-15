@@ -1,9 +1,11 @@
 # 同期状況
 
-最終実行: 2026-11-15 06:54 UTC
+最終実行: 2026-11-15 16:38 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
+| 2FastAPI | ok | 同期完了 |
+| 2FastAPI-VSC | ok | 同期完了 |
 | 360-speaker | ok | 同期完了 |
 | FastAPIM | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
 | JOB-SEARCH | ok | 同期完了 |
@@ -71,6 +73,8 @@
 | dream-os | warn | 個人情報の可能性(目視確認): crates/dream-os-fonts/fonts/IPA-LICENSE.txt(email) |
 | e-gov | ok | 同期完了 |
 | ftp-auto-sync | ok | 同期完了 |
+| fuser-android | ok | 同期完了 |
+| fuser-android | warn | 個人情報の可能性(目視確認): Cargo.toml(email), Cargo.toml.orig(email), examples/notify_inval_entry.rs(email), examples/notify_inval_inode.rs(email), examples/poll.rs(email), examples/poll_client.rs(email), src/lib.rs(email) |
 | karu-tokyo | ok | 同期完了 |
 | maid-cafe-english | ok | 同期完了 |
 | maid-cafe-english | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), scripts/archive-articles-to-github.sh(email), web/web-dev-path.json(email) |
@@ -122,7 +126,8 @@
 | open-music-llm | ok | 同期完了 |
 | open-network-amp | ok | 同期完了 |
 | open-raid-z | ok | 同期完了 |
-| open-raid-z | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), open_runo_zfs_source/third_party/fuser-0.17.0-android-patch/Cargo.toml(email), open_runo_zfs_source/third_party/fuser-0.17.0-android-patch/examples/notify_inval_entry.rs(email), open |
+| open-raid-z | warn | 個人情報の可能性(目視確認): CLAUDE.md(email) |
+| open-raid-z-installer | ok | 同期完了 |
 | open-redmine | ok | 同期完了 |
 | open-redmine | warn | 個人情報の可能性(目視確認): CLAUDE.md(email), web/src/lib.rs(email) |
 | open-runo | ok | 同期完了 |

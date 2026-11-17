@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-16 19:58 UTC
+最終実行: 2026-11-17 04:08 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -180,6 +180,7 @@
 | version-control | ok | 同期完了 |
 | version-control | warn | 個人情報の可能性(目視確認): PORTING.md(email), src/apiex.rs(email) |
 | vps-backup | ok | 同期完了 |
+| vps-tidy | ok | 同期完了 |
 | warikan | ok | 同期完了 |
 | webeditor-sftp | ok | 同期完了 |
 | webeditor-sftp | warn | 個人情報の可能性(目視確認): vscode-extension/package-lock.json(email) |

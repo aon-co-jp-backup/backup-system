@@ -1,11 +1,14 @@
 # 同期状況
 
-最終実行: 2026-11-17 04:08 UTC
+最終実行: 2026-11-17 16:22 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
-| 2FastAPI | ok | 同期完了 |
+| 2FastAPI | blocked | gitleaks検出 1件(要確認・失効) |
 | 2FastAPI-VSC | ok | 同期完了 |
+| 2MFastAPI | ok | 同期完了 |
+| 2Poem | ok | 同期完了 |
+| 2Poem | warn | 個人情報の可能性(目視確認): tests/test_convert.py(email) |
 | 360-speaker | ok | 同期完了 |
 | FastAPIM | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
 | JOB-SEARCH | ok | 同期完了 |
@@ -37,7 +40,7 @@
 | RS-Sync | warn | 個人情報の可能性(目視確認): src/mail.rs(email), src/provider.rs(email), src/sync_engine.rs(email), static/index.html(email/jp_phone), tests/sync_integration.rs(email) |
 | RS-TypeScript | ok | 同期完了 |
 | RUNO | ok | 同期完了 |
-| RUNO | warn | 個人情報の可能性(目視確認): API-REST-REMAINING-20261106.md(email) |
+| RUNO | warn | 個人情報の可能性(目視確認): API-REST-REMAINING-20261106.md(email), PORTING.md(email) |
 | Rust-JSON | ok | 同期完了 |
 | TypeScript | ok | 同期完了 |
 | ai-ime-runo | ok | 同期完了 |

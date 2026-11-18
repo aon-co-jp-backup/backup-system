@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-18 01:11 UTC
+最終実行: 2026-11-18 12:03 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -45,6 +45,7 @@
 | RS-TypeScript | ok | 同期完了 |
 | RUNO | ok | 同期完了 |
 | RUNO | warn | 個人情報の可能性(目視確認): API-REST-REMAINING-20261106.md(email), PORTING.md(email) |
+| Reaxt | ok | 同期完了 |
 | Rust-JSON | ok | 同期完了 |
 | TypeScript | ok | 同期完了 |
 | ai-ime-runo | ok | 同期完了 |
@@ -161,6 +162,7 @@
 | pdf-r2l-win | ok | 同期完了 |
 | pinax | ok | 同期完了 |
 | pl2pl | ok | 同期完了 |
+| pl2pl | warn | 個人情報の可能性(目視確認): src/blade.rs(email) |
 | poem-runo | ok | 同期完了 |
 | poem-tauri-cosmo | ok | 同期完了 |
 | rcss3 | ok | 同期完了 |

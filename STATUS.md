@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-17 16:22 UTC
+最終実行: 2026-11-18 01:11 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -10,8 +10,12 @@
 | 2Poem | ok | 同期完了 |
 | 2Poem | warn | 個人情報の可能性(目視確認): tests/test_convert.py(email) |
 | 360-speaker | ok | 同期完了 |
+| COBOL_to | ok | 同期完了 |
+| COBOL_to | warn | 個人情報の可能性(目視確認): PORTING.md(email) |
 | FastAPIM | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
 | JOB-SEARCH | ok | 同期完了 |
+| Java_to | ok | 同期完了 |
+| Java_to | warn | 個人情報の可能性(目視確認): tests/e2e/test_converted.py(email) |
 | MFastAPI | ok | 同期完了 |
 | MojoU | orphan | 元が公開でない/存在しない。ミラーを手動確認 |
 | OnlineTimeRecorder | ok | 同期完了 |
@@ -156,6 +160,7 @@
 | pdf-r2l-script-win | ok | 同期完了 |
 | pdf-r2l-win | ok | 同期完了 |
 | pinax | ok | 同期完了 |
+| pl2pl | ok | 同期完了 |
 | poem-runo | ok | 同期完了 |
 | poem-tauri-cosmo | ok | 同期完了 |
 | rcss3 | ok | 同期完了 |

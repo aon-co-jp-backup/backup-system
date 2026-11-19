@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-19 12:01 UTC
+最終実行: 2026-11-19 20:52 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -164,7 +164,7 @@
 | pdf-r2l-win | ok | 同期完了 |
 | pinax | ok | 同期完了 |
 | pl2pl | ok | 同期完了 |
-| pl2pl | warn | 個人情報の可能性(目視確認): converters/cobol_to/PORTING.md(email), converters/java_to/tests/e2e/test_converted.py(email), src/blade.rs(email) |
+| pl2pl | warn | 個人情報の可能性(目視確認): converters/cobol_to/PORTING.md(email), converters/java_to/tests/e2e/test_converted.py(email), src/blade.rs(email), src/stack.rs(email) |
 | poem-runo | ok | 同期完了 |
 | poem-tauri-cosmo | ok | 同期完了 |
 | rcss3 | ok | 同期完了 |

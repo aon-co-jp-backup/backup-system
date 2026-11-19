@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-19 02:46 UTC
+最終実行: 2026-11-19 12:01 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -24,6 +24,7 @@
 | RCsomo | ok | 同期完了 |
 | RFrontEnd | ok | 同期完了 |
 | RMojo | ok | 同期完了 |
+| RPoRea | ok | 同期完了 |
 | RPoem | blocked | gitleaks検出 1件(要確認・失効) |
 | RS-Blog | ok | 同期完了 |
 | RS-BootStrap | ok | 同期完了 |
@@ -106,6 +107,7 @@
 | open-bar | ok | 同期完了 |
 | open-cg-cad | ok | 同期完了 |
 | open-cosmo | ok | 同期完了 |
+| open-cosmo | warn | 個人情報の可能性(目視確認): crates/open-runo-gateway/src/remote_subgraphs.rs(email) |
 | open-cpu | ok | 同期完了 |
 | open-cuda | ok | 同期完了 |
 | open-directx | ok | 同期完了 |
@@ -194,4 +196,5 @@
 | warikan | ok | 同期完了 |
 | webeditor-sftp | ok | 同期完了 |
 | webeditor-sftp | warn | 個人情報の可能性(目視確認): vscode-extension/package-lock.json(email) |
+| whisper.cpp | blocked | gitleaks検出 4件(要確認・失効) |
 | world-lab | ok | 同期完了 |

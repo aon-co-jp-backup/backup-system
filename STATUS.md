@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-20 12:02 UTC
+最終実行: 2026-11-20 20:39 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -178,6 +178,7 @@
 | rs-kokoro-ja | ok | 同期完了 |
 | rs-link-fusion | ok | 同期完了 |
 | rs-to-readme | ok | 同期完了 |
+| rs-whisper | ok | 同期完了 |
 | rs-xorriso | ok | 同期完了 |
 | rsa-rs | ok | 同期完了 |
 | runo-scanner | ok | 同期完了 |

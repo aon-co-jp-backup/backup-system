@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-25 00:05 UTC
+最終実行: 2026-11-25 09:00 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -9,6 +9,7 @@
 | 2MFastAPI | ok | 同期完了 |
 | 2Poem | ok | 同期完了 |
 | 2Poem | warn | 個人情報の可能性(目視確認): tests/test_convert.py(email) |
+| 2RPoRea | ok | 同期完了 |
 | 360-speaker | ok | 同期完了 |
 | COBOL_to | ok | 同期完了 |
 | COBOL_to | warn | 個人情報の可能性(目視確認): PORTING.md(email) |
@@ -114,7 +115,7 @@
 | open-directx | ok | 同期完了 |
 | open-easy-web | ok | 同期完了 |
 | open-easy-web | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), server/src/db_encryption.rs(email), server/src/users.rs(jp_phone) |
-| open-english | error | push失敗: remote: Internal Server Error         remote: Request ID B400:309203:127322:335719:6B062521         remote: Time 2026-11 |
+| open-english | ok | 同期完了 |
 | open-english | warn | 個人情報の可能性(目視確認): CLAUDE.md(email/jp_phone), mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), scripts/archive-articles-to-github.sh(email), web/web-dev-path.json(email) |
 | open-english-news-archive | ok | 同期完了 |
 | open-english-news-archive-002 | ok | 同期完了 |

@@ -1,12 +1,13 @@
 # 同期状況
 
-最終実行: 2026-11-26 03:44 UTC
+最終実行: 2026-11-26 17:10 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
 | 2FastAPI | blocked | gitleaks検出 1件(要確認・失効) |
 | 2FastAPI-VSC | ok | 同期完了 |
 | 2MFastAPI | ok | 同期完了 |
+| 2MFastAPI | warn | 個人情報の可能性(目視確認): tests/test_laravel.py(email) |
 | 2Poem | ok | 同期完了 |
 | 2Poem | warn | 個人情報の可能性(目視確認): tests/test_convert.py(email) |
 | 2RPoRea | ok | 同期完了 |

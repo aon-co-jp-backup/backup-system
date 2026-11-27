@@ -1,6 +1,6 @@
 # 同期状況
 
-最終実行: 2026-11-27 01:54 UTC
+最終実行: 2026-11-27 12:53 UTC
 
 | リポジトリ | 状態 | 詳細 |
 |---|---|---|
@@ -93,6 +93,7 @@
 | maid-cafe-se | ok | 同期完了 |
 | maid-cafe-tokyo | ok | 同期完了 |
 | maid-cafe-tokyo | warn | 個人情報の可能性(目視確認): english/CLAUDE.md(email/jp_phone), english/mobile/android/app/src/main/assets/webroot/web-dev-path.json(email), english/scripts/archive-articles-to-github.sh(email), english/web/web-dev-path.json(emai |
+| maid-cafe-vsc | blocked | gitleaks検出 2件(要確認・失効) |
 | maidcafe-programming-school | ok | 同期完了 |
 | maidcafe-programming-school | warn | 個人情報の可能性(目視確認): curriculum/web-dev-path.json(email) |
 | make-disk | ok | 同期完了 |
